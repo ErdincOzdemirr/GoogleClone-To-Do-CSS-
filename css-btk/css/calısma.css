@@ -1,0 +1,529 @@
+/* 1- inline internal external lesson */
+/* .green{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+div{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.deneme{
+    color: green;
+} */
+
+/* 2 - seçiciler */
+/* * : şey seçilir */
+/* * {
+    background-color: aqua;
+} */
+
+/* p : P tagı seçilir */
+/* p{
+    background-color: bisque;
+    color: green;
+    font-size: 20px;
+    font-style: italic;
+} */
+
+/* #ilk    : id değeri #ilk olan eleman seçilir. */
+/* #ilk {
+    background-color: red;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+} */
+/* .son    : class değeri .son olan seçilir. */
+/* .son{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+} */
+/* h1.egik : class değeri .egik olan h1 etiketleri seçilir. */
+/* h1.egik{
+    background-color: greenyellow;
+    color: red;
+    font-size: 18px;
+    font-style: italic;
+} */
+/* p strong    : p tagı içindeki tüm strong tagları seçilecek */
+/* p strong {
+    background-color: blue;
+    color: yellow;
+    font-size: 25px;
+} */
+/* nav #buton  : nav tagı içinde id değeri #buton tüm elemanlar seçilecek. */
+/* nav #buton {
+    background-color: bisque;
+    color: brown;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+/* h2,h3,h4 arası tüm taglar seçilir */
+/* h2,h3,h4 {
+    background-color: red;
+    color: yellow;
+    font-size: 30px;
+    font-family: monospace;
+} */
+
+/* 3- Karmasık Seciciler */
+/* .banner p    : Class değeri banner olan eleman içindeki p tagı seçilecek */
+/* .banner p {
+    background-color: blue;
+    font-size: 35px;
+} */
+
+/* div>p    : ebeveyni div olan tüm p taglarını seçer */
+/* div>p {
+    background-color: red;
+    font-size: 25px;
+} */
+
+/* .menu ul li clas değeri menu olan eleman içindeki ul tagının li tagını seçer */
+/* .menu ul li {
+    background-color: green;
+    font-size: 15px;
+} */
+
+/* nav.blue li  : nav tagı içinde class değeri blue olan elemanın içindeki li tagına css uygulaması*/
+/* nav .blue li {
+    background-color: blue;
+    font-size: 35px;
+} */
+
+/* body>p:first/last-child body tagı içindeki ilk veya son paragrafa css */
+/* body>p:first-child {
+    color: red;
+    font-size: 40px;
+}
+body>p:last-child {
+    color: green;
+    font-size: 40px;
+} */
+
+/* 3- CSS KUTU MODELİ */
+/* margin   : kenarlıklarla diğer nesneler arası mesafe (dış kenarlık) 
+   border   : kenarlık 
+   padding  : kenarlık ile içerik arası boşluk
+   width 
+   height   : içerik genişlik ve boy */
+
+   /* bazı html komutları block olarak bütün satırları kaplar (block) ör; hx, p, table 
+    bazı html komutları da (inline) yani sadece bulundukları yeri kaplar. ör; a, b, em, img*/
+
+    /* h1{
+        border-style: double; */
+        /* border style : kenarçizgi tipi
+        border-width : çzigi kalınlığı
+        border-color : kenarlık rengi */
+        /* border-width: 10px 20px 30px 40px;
+        border-color: red blue yellow green;
+        width: 200px;
+        height: 80px;
+        padding: 0px 50px 10px 20px;
+        margin: 30px;
+    }
+    p{
+        border-style: solid;
+        border-width: 2px;
+        border-color: green;
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        background-size: 200px;
+    } */
+
+/* kutu davranışını değiştirmek için a inline iken display etiketi ile block yapılır */
+
+/* a{
+    background-color: yellow;
+    color: red;
+    display: block;
+} */
+
+/* #sayfa{
+    border-style: dotted;
+    width: 300px;
+    margin: auto;
+    background-color: chocolate;
+}
+header{
+    border-style: solid;
+    border-color: cornflowerblue;
+    background-color: cyan;
+    width: 280px;
+    margin: auto;
+    height: 50px;
+}
+nav{
+    border-style: dashed;
+    border-color: darkgreen;
+    background-color: yellowgreen;
+    width: 280px;
+    margin: auto;
+    height: 50px;
+}
+article{
+    border-style: double;
+    border-color: blue;
+    background-color: yellow;
+    width: 280px;
+    margin: auto;
+    min-height: 250px;
+}
+footer{
+    border-style: solid;
+    border-color: cornflowerblue;
+    background-color: blueviolet;
+    width: 280px;
+    margin: auto;
+    min-height: 50px;
+} */
+
+/* 4-Position çalışması */
+
+/*  position:static kutuların varsayılan değerleridir.
+    position:relative; kutunun bulunduğu konuma göre taşınmasını sağlar.
+    position:fixed; kutunun sayfaya göre ayarlanmasını sağlar.
+    position:absolute; kutu içindeki kutunun konumunu ayarlar. */
+    /* div{
+        border-color: indianred;
+        border-style: solid;
+    }
+    #buyuk{
+        width: 200px;
+        height: 100px;
+        background-color: khaki;
+        position: fixed; 
+        right: 30px;
+        bottom: 10px; 
+    }
+    #kucuk{
+        width: 100px;
+        height: 50px;
+        background-color: lawngreen;
+        position: absolute; 
+        left: 30px;
+        top: 10px; 
+    } */
+
+/* 5- Kutuların öne veya arkaya alınması 
+    Bunun için z-index özelliği kullanılır.*/
+/* z-index değeri yüksek olan önde olur. */
+/* div{
+    border-color: indianred;
+    border-style: solid;
+}
+#buyuk {
+    width: 200px;
+    height: 100px;
+    background-color: khaki;
+    z-index: 1;
+}
+#kucuk {
+    width: 100px;
+    height: 50px;
+    background-color: lawngreen;
+    position: relative; 
+    left: 30px;
+    top: -30px;
+    z-index: -1;
+} */
+
+/* 7- Kutuların kenarlarını yuvarlatmak için border radius özelliği kullanılır.*/
+/* div{
+    border-color: indianred;
+    border-style: solid;
+}
+#kose{
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    overflow: auto;
+    /* overflow ile kutu içindeki taşan içeriğin durumu belirlenir */
+    /* border-radius: 10px 40px;
+    border-width: 5px 10px 20px 40px;
+    border-color: blue yellow red green;
+} */ 
+
+/* 8- Kutulara gölge oluşturma */
+/*  box-shadow komutu içerisinde sırayla alttaki kodların değerleri girilir.
+    none varsayılandeğer. gölge olmaz
+    h-shadow    : Gölgenin yatay boyutu
+    v-shadow    : Gölgenin dikey boyutu
+    blur        : gölgenin kenarını belirlenen boyutta yumuşatır.
+    spread      : gölgenin tüm yönlerde genişlemesini sağlar.
+    color       : Gölge rengi
+    inset       : gölgeyi nesnenin iç tarafına yapar. */
+    /* p {
+        border-style: solid;
+        border-width: 10px;
+        margin-bottom: 60px;
+        padding: 20px;
+        border-color: darkblue;
+        box-shadow: 20px 10px 20px yellow;
+        border-radius: 30px;
+    } */
+
+    /* 9- Kutuların yaslanması (Float) 
+    Kutunun sağa veya sola yaslmnması için FLOAT özelliği kullanılır.*/
+    /* div {
+        border-style: solid;
+        border-color: red;
+        background-color: yellowgreen;
+        border-width: 5px;
+        width: 100px;
+        height: 50px;
+        float: left;
+        margin: 20px
+
+    } */
+
+    /* 10-SEMANTİK */
+    /* #sayfa {
+        border-style: solid;
+        border-color: yellowgreen;
+        border-width: 2px;
+        width: 400px;
+        min-height: 400px;
+        margin: auto;
+    }
+    
+    header {
+        border-style: dotted;
+        border-color: blue;
+        width: 360px;
+        margin: auto;
+        background-color: chocolate;
+    }
+    
+    nav{
+        border-style: dashed;
+        border-color: red;
+        width: 360px;
+        height: 30px;
+        margin: auto;
+        background-color: seagreen;
+    }
+    
+    article{
+        border-style: solid;
+        border-color: green;
+        width: 200px;
+        min-height: 200px;
+        margin: auto;
+        background-color: yellow;
+        float: left;
+        position: relative;
+        left: 17px;
+    }
+    
+    aside{
+        border-style: solid;
+        border-color: green;
+        width: 160px;
+        min-height: 200px;
+        margin: auto;
+        background-color: aqua;
+        float: right;
+        position: relative;
+        right: 17px;
+    }
+    
+    footer {
+        border-style: double;
+        border-color: red;
+        width: 360px;
+        height: 30px;
+        margin: auto;
+        background-color: seagreen;
+        float: left;
+        position: relative;
+        left: 17px;
+    } */
+
+    /* 
+text-indent : (em,px) paragrafın ilk satırdaki girintisini ayarlar 
+text-align : (left, right, center, justify) pragrafın sola,sağa,ortaya veya her iki kenara yaslanmasını sağlar.
+line-height : (em,px) paragraftaki satırlar arasındaki mesafeyi ayarlar*/
+h1{
+}
+
+p{
+    /* Paragraf özellikleri */
+    text-indent: 40px;
+    text-align: left;
+    line-height: 20px;
+    /* Metin özellikleri */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: normal;
+    /* text-transform metnin büyük küçük harf */
+    text-transform:capitalize;
+    /* text decoration metnin altını üstünü çizme */
+    text-decoration: none;
+    /* letter-spacing karakterler arası boşluk */
+    letter-spacing: 1px;
+    /* word-spacing kelimler arası mesafe */
+    word-spacing: 5px;
+}
+
+.metin{
+    color: blue;
+    font-size: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: yellow;
+
+}
+
+/* metin ardalan uygulamak için background-color ve background-image kullanılır. */
+
+/* List style  
+list-style-type tagı kullanılır.*/
+/* ul{
+    list-style-type: square;
+}
+
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: italic;
+} */
+
+
+/* Tablo biçimlendirme:
+
+    table, tr,td,th,caption, thead, tbody, tfoot
+    
+    bunlara css uygulanabilir.
+    
+    hücre içindeki elemanları hizalamak için text-align ve vertical-align kullanılır. */
+
+    /* table{
+        border-color: red;
+        color: blue;
+        background-color: yellow;
+        border-collapse: collapse;
+        border-width: 15px;
+    }
+    th{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        font-weight: bolder;
+        color: red;
+        background-color: seagreen;
+        padding: 10px;
+        border-width: 5px;
+    }
+    td{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: bold;
+        background-color: yellowgreen;
+        text-align: center;
+        padding: 5px;
+        vertical-align: middle;
+        height: 30px;
+        border-width: 5px;
+        border-color: white;
+        border-style: dotted;
+    } */
+
+    /* .formeleman {
+        color: darkblue;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: darkgoldenrod;
+        border-color: darkmagenta;
+        border-width: 5px;
+        margin: 10px;
+        padding: 10px;
+        border-style: dotted;
+        border-radius: 30px;
+    } */
+
+    /* 15/* Linklerin biçimlendirirlmesi */
+/*  a:link   (ziyaret edilmemiş link)
+    a:visited (ziyaret edilmiş link)
+    a:hover (fare link üzerinde)
+    a:active (fare tıkladığında) 
+    
+    
+    a:link, a:visited {
+    display:block;
+    font-weight:bold;
+    color:blue;
+    text-decoration:none;
+    }
+    
+    a:hover, a:active {
+        display:block;
+        color:block;
+    }*/
+
+    /* #altmenu {
+        background-color: chartreuse;
+        border-style: solid;
+        border-width: 5px;
+        border-color: grey;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        color: black;
+    }
+
+    a{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    a:link{
+        color: black;
+        }
+    a:visited{
+        color: brown;
+    }
+    a:hover{
+        color: grey;
+        text-decoration: underline;
+    }
+    a:active{
+        color: red;
+    } */
+
+    /* ul{
+        list-style-type: none;
+    }
+    
+    li{
+        border-style: solid;
+        width: 100px;
+        border-color: magenta;
+        border-width: 5px;
+        text-align: center;
+        padding: 10px;
+        float: left;
+        margin: 5px;
+        background-color: darkorange;
+        border-radius: 35px;
+    }
+    
+    ul li a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    
+    ul li a:hover {
+        color: red;
+        text-decoration: underline;
+    } */

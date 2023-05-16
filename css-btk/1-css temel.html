@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS BTK</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <style>
+            .blue {
+                color: blue;
+                font-size: 30px;
+            }
+            .deneme {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- İNLİNE CSS -->
+        <p style="color: red;">satır içi css uygulama</p>
+        <!-- internal css -->
+        <p class="blue">sayfa içi css uygulamaları head bölümüne style/style tagı içine yazılır. </p>
+        <!-- external (satırdışı css) -->
+        <h1 class="green">style.css den css uytgulamaları çekilir.</h1>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <!-- aynı tag a hem inline hem internal hem de external css uygulandığında öncelik  -->
+        <p class="deneme" style="color: red;">Metin hangi renk olacak ve öncelikle hangi css uygulanacaktır? öncelik html koduna yakın olan önceliklidir. yani tagdaki satır içi (inline) css uygulanır. daha sonra style tagı içindeki (internal) css uygulanır. en son (external) css uygulanır.</p>
+    </body>
+</html>
